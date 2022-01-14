@@ -1,14 +1,9 @@
 function solve(input){
+
     input = input.toUpperCase();
-    let splitter = [' ', ',', '.', '!', '?'];
-    input = input.split(splitter);
+    const regex = /[A-z0-9]+/g
+    let words = [...input.matchAll(regex)];
 
-    let words = [];
-
-    for (let i = 0; i < input.length; i++) {   
-        words.push(input[i]);
-    }
-    words.map(x.t);
     console.log(words.join(', '));
 }
 

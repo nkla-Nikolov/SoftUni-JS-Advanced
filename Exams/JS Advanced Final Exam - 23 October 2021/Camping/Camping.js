@@ -90,10 +90,13 @@ class SummerCamp {
     }
 };
 
+
 const summerCamp = new SummerCamp("Jane Austen", "Pancharevo Sofia 1137, Bulgaria");
 console.log(summerCamp.registerParticipant("Petar Petarson", "student", 300));
-console.log(summerCamp.registerParticipant("Ivan Ivanov", "student", 300));
-console.log(summerCamp.registerParticipant("suka blqti", "student", 300));
+console.log(summerCamp.timeToPlay("Battleship", "Petar Petarson"));
+console.log(summerCamp.registerParticipant("Sara Dickinson", "child", 200));
+console.log(summerCamp.timeToPlay("WaterBalloonFights", "Petar Petarson", "Sara Dickinson"));
+console.log(summerCamp.registerParticipant("Dimitur Kostov", "student", 300));
+console.log(summerCamp.timeToPlay("WaterBalloonFights", "Petar Petarson", "Dimitur Kostov"));
 
-console.log(summerCamp.unregisterParticipant("Petar Petarson"));
-console.log(summerCamp.unregisterParticipant("Ivan Ivanov"));
+console.log(summerCamp.toString());

@@ -10,7 +10,7 @@ class ArtGallery{
         let currentArticle = {
             model: articleModel.toLowerCase(),
             name: articleName,
-            quantity
+            quantity: Number(quantity)
         }
 
         if(!this.possibleArticles[articleModel.toLowerCase()]){
@@ -104,7 +104,7 @@ class ArtGallery{
             return result.join('\n');
         }
     };
-}
+};
 
 const artGallery = new ArtGallery('Curtis Mayfield'); 
 artGallery.addArticle('picture', 'Mona Liza', 3);
